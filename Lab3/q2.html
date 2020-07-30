@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Kauai</title><script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+        
+        <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.bundle.min.js" integrity="sha384-1CmrxMRARb6aLqgBO7yyAxTOQE2AKb9GfXnEo760AUcUmFx3ibVJJAzGytlQcNXd" crossorigin="anonymous"></script>
+        
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+        <style>
+        
+            #navbar ul {
+                    display: block;
+                    list-style-type: disc;
+                    margin-block-start: 1em;
+                    margin-block-end: 1em;
+                    margin-inline-start: 0px;
+                    margin-inline-end: 0px;
+                    padding-inline-start: 40px;
+                }
+                #navbar li {
+                    float: left;
+                    display: inline;
+                    text-align: -webkit-match-parent;
+                    }
+                #navbar li a{
+                    padding-left:55px;
+                    padding-right: 55px;
+                }
+                #navbar a:hover 
+{
+	/*
+	background: #F7F7F4;
+	background: #D97800;
+	*/
+	background-color: #F49A24;
+	color: #000000;
+	
+	
+}
+                #header {
+                    clear: both;
+                    width: 96%;
+                    overflow: hidden;
+                    /* height: 7em; */
+                    margin: 0px 1em 0em 1em;
+                    border-top: 4px #8CC634 solid;
+                    background-color: #8CC634;
+                }
+                #content
+{
+	clear:both;
+	width:96%;
+    text-align:left;
+	margin-left:1em;
+	margin-right:1em;
+	margin-top:1em;
+	overflow:hidden;
+}
+
+#left
+{
+	float: left;
+	width: 75%;
+	padding-left:0%;
+}
+
+#right
+{
+	float: right;
+	width: 20%;
+	padding: 0.313em;
+	background: #EDEBD5;	
+}
+
+#right h2 
+{
+	margin: 0%;
+	padding: 0.313em 0.938em;
+	color: orangered;
+}
+
+#right h3 
+{
+	font-size: 85%;
+	color: #FFFFFF;
+}
+
+#right ul 
+{
+	margin: 0;
+	padding: 0.938em;
+	list-style: none;
+}
+
+#right a 
+{
+	color: #FFFFFF;
+}
+
+#right a:hover 
+{
+	color: #F49A24;
+	background-color: #FFFFFF;
+}
+
+#right .active a 
+{
+	color: #F49A24;
+	background-color: #FFFFFF;
+}
+
+#side 
+{
+	width:90%;
+	margin-left: auto;
+	margin-right: auto;
+	/*
+	background-color: #F3951B;  
+	*/
+	background-color: #EE7B10;
+}
+
+#side h2 
+{
+	/*
+	background-color: #ED5C0C;
+	background-color: #EA811F;
+	background-color: #E07B1D;
+	*/
+    background-color:orangered;
+    color:darkorange;
+    text-shadow: black 2px 2px 2px;	
+	width:99%;
+	padding:7px 1px;
+	margin:0px;
+	border-top:medium white solid;
+	font-size:1.3em;
+}
+
+#side ul
+{
+	width:100%;
+	padding:0px;
+	margin:0px;
+}
+
+#side li
+{
+	margin:0px;
+	text-indent:8px;
+	padding:5px 0px;
+    color: white;
+    background-color: orange;
+	/*
+	border-top:medium #ED5C0C solid;
+	*/
+	border-top:medium #E07B1D solid;
+	width:100%;
+	font-size:.85em;
+}
+
+#side a 
+{
+	display:block;
+	margin-top:1px;
+	width:100%;
+    text-decoration:none;
+}
+#quotations
+{
+    width:96%;
+    margin-left:1em;
+    margin-right:1em;
+}
+
+#contactInfo
+{
+    width:96%;
+	margin-left:1.2em;
+	margin-right:1em;
+    margin-bottom:0px;	
+	background-color: #EDEBD5;
+	
+	overflow:hidden;
+	/*
+	height: 6.9em;
+	*/
+	padding-top: 15px;
+	padding-bottom: 0px;
+	padding-left: 0px;
+	padding-right: 0px;
+	
+	text-align: center;
+	font-size: 77%;
+	
+	/* Proposed W3C Markup */ 
+	background-image: linear-gradient(bottom, #FFFFFF 0%, #edebd5 100%);	
+}
+img.leftimg 
+{
+	float: left;
+	margin: 0 20px 10px 0;
+	width:35.5%;
+    max-width: 100%;	
+    height: auto;
+}
+
+#contactInfo a 
+{
+	color: #666666;
+}
+
+        </style>
+    </head>
+    <body>
+        <div class="container-fluid"style="width:100%" >
+            <div id="navbar" style="text-align: center;" >
+                <ul  style="background-color:#ED5C0C">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Condo Details</a></li>
+                    <li><a href="#">Rates</a></li>
+                    <li><a href="#">Availability</a></li>
+                    <li><a href="#">Booking</a></li>
+                    <li><a href="#">Brochure</a></li>
+                    <li><a href="#">kauai</a></li>
+                </ul>
+            </div>
+            <div id="header">
+                
+                    <!-- <div class="row"> -->
+                        <img alt="palms" src="kauai/headerLeft.jpg" style="width:17.5%; float:left; margin-left:7%; margin-top:0.313em; margin-bottom:0.313em;" />
+                        <img alt="palms" src="kauai/headerRight.jpg" style="width:43%; float:right; margin-right:7%;" />
+                <!-- </div> -->
+            
+            </div>
+            <div id="content">
+                <div id="left">
+                    <h1>Welcome to <i>The Cliffs at Princeville 7301!</i></h1>
+                    <div style="overflow:hidden;">
+                        <img src="kauai/mainImage.jpg" alt="" class="leftimg" />
+                        <p><strong>The Cliffs at Princeville 7301</strong> in Princeville, Kauai 
+                        is the best vacation rental condo bargain available!</p>
+                        <h2>Details</h2>
+                        <p>The Cliffs at Princeville 7301 is a spacious<strong>2-bedroom Kauai condo</strong> that encompasses over <strong>1500 square feet of opulence</strong>, all dedicated to your comfort 
+                        when you are not out exploring the splendors of
+                        <strong>Kauai's North Shore</strong> the most luxuriant part of one of the most beautiful islands of Hawaii.</p>
+                     </div>
+                     <p>A virtual home away from home, this condo in Kauai's Princeville resort and golf community features the following:</p>
+			<ul>
+			   <li>a large, breezy living room overlooking the Pacific Ocean</li>
+			   <li>a complete kitchen</li>
+			   <li>two bedrooms</li>
+    
+               <li>two full bath</li>
+               <li>two private lanais to enjoy the tranquility of the island</li>
+            
+			</ul> 
+			<p>This unit is large enough to accommodate up to <strong>five adults</strong>.</p>
+			<p>Continuously <strong>remodeled and upgraded</strong>, this unit, one of the best in the <strong>Five-star Cliffs at Princeville, Kauai condo resort</strong>, has never been nicer! </p>
+			<h2>Golfers' Paradise!</h2>
+			<p>Guests staying at this Princeville vacation rental condo are entitled to a substantial discount at not one but <a href="#"><strong>two of the most magnificent golf courses in the world.</strong></a> What a deal! </p>
+			<h2>Features</h2>
+            <p>This Kauai vacation rental offers additional features:</p>
+			<ul>
+			   <li>reasonable rates for exceptional accommodations</li>
+			   <li>an excellent ocean view</li>
+			   <li>wonderful resort facilities</li>
+			   <li>whale watching from the living room lanai from November to March</li>
+			   <li>excellent snorkeling sites located just a short drive away</li>
+			   <li>an Ethernet connection for hi-speed Internet (free to our renters)</li>
+            </ul>
+            
+                </div>
+                <div id="right">
+                    <div id="side">
+                       <h2>Photos</h2>
+                       <ul>
+                        <li>Photos of the Condo</li>
+                        <li>View of Condo Access</li>
+                        <li>Photos of The Cliffs</li>
+                        <li>Kauai Scenery</li>
+                        <li>Kauai Beaches</li>
+                       </ul>
+                       <h2>The Cliffs</h2>
+                       <ul>
+                        <li>Resort Details</li>
+                        <li>Princeville Golf Courses</li>
+                        <li>Activities</li>
+                        <li>Location</li>
+                        <li>Directions</li>
+                        <!-- • Resort Details
+                        • Princeville Golf Courses
+                        • Activities
+                        • Location
+                        • Directions -->
+                       </ul>
+                       <h2>Reviews</h2>
+                       <ul>
+                          <li>Guest Comments</li>
+                          <li>Review us</li>
+                       </ul>	
+                    </div> <!-- end #side -->
+                 </div>
+                
+            </div>
+            
+            <div style="clear:both"></div>
+            
+            <div id="footer" >
+                <div id="quotations">
+                    <hr/>
+                    <div class="">		
+                    <img class="d-inline" src="kauai/quoteOpen.gif"><p class="d-inline" style="font-style: italic;">This unit is just wonderful - the view, sunrise, and spaciousness!</p><img class="d-inline" src="kauai/quoteClose.gif"></div>
+                    <hr/>
+                    <div><img class="d-inline" src="kauai/quoteOpen.gif"><p class="d-inline" style="font-style: italic;">Everything here is very comfortable and clean. Views are outstanding and the breeze is wonderful! We will definitely come back!</p><img class="d-inline" src="kauai/quoteClose.gif"></div>
+                    <hr/>
+                 </div> 
+                 <p>Click our Availability Calendar to check availability, or fill out our Booking form to make reservations, or call the Mellemas at (626) 351-0405 or e-mail inquiry@go-kauai.com for questions.</p>
+                 <div class="sub-footer" style="background-color: #EDEBD5; text-align: center;">
+                    <p>
+                       <a href="#">FAQs</a> | 
+                       <a href="#">Privacy Policy</a> | 
+                       <a href="#">About Us</a> | 
+                       <a href="#">Contact Us</a>
+                    </p>
+                 </div>
+            </div>
+
+        </div>
+
+    </body>
+</html>

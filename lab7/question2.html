@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Form Validations</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.bundle.min.js" integrity="sha384-1CmrxMRARb6aLqgBO7yyAxTOQE2AKb9GfXnEo760AUcUmFx3ibVJJAzGytlQcNXd" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+        <script src="question2js.js" type="text/javascript"></script>
+        <script>
+            function getSelectedOptions(sel,fn){
+                var opts = [], opt;
+                var  len =  sel.options.length;
+                for(var i = 0;i<len; i++){
+                    opt = sel.options[i];
+                    if(opt.selected){
+                        opts.push(opt);
+                        if(fn){
+                            fn(opt);
+                        }
+                    }
+                }
+                    return opts;
+            }
+            function callback(opt) {
+                var display = document.getElementById('display');
+                display.innerHTML+= opt.value + ',';
+            }
+            document.getElementById('cars').onchange() = function(e) {
+                var display = document.getElementById('display');
+                display.innerHTML="";
+                getSelectedOptions(this,callback);
+                var str = display.innerHTML.slice(0,-2);
+                display.innerHTML = str;
+            document.getElementById('submission').addEventListener('click',call_submit(event));
+            }
+        </script>
+    </head>
+    <body>
+        <div>
+            <form id="submission">
+                <label for="input1">Hyphen_alphanumerics
+                    <input type="text" id="input1" name="input1" required />
+                </label>
+                <br/>
+                <label for="dropdown">Dropdown Multiple
+                    <select name="cars" id="cars" multiple>
+                        <option value="volvo">Volvo</option>
+                        <option value="saab">Saab</option>
+                        <option value="opel">Opel</option>
+                        <option value="audi">Audi</option>
+                      </select>
+                </label>
+                <br/>
+                <label for="dropdown">Dropdown Single
+                    <select name="bikes" id="bikes" multiple>
+                        <option value="suzuki">Suzuki</option>
+                        <option value="Hero">Hero</option>
+                        <option value="R15">R15</option>
+                        <option value="audi">Audi</option>
+                      </select>
+                </label>
+                <br/>
+                <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+<label for="vehicle1"> I have a bike</label><br>
+            
+            <br/>
+            <div>
+                <input type="radio" id="male" name="gender" value="male">
+<label for="male">Male</label><br>
+<input type="radio" id="female" name="gender" value="female">
+<label for="female">Female</label><br>
+<input type="radio" id="other" name="gender" value="other">
+<label for="other">Other</label>
+            </div>
+            <div name= "passwordChecker">
+                <label for="password">Password
+                    <input type="text" id="password" name="password" required />
+                </label>
+            </div>
+            <br/>
+            <div name= "datetimeChecker">
+                <label for="date">Date
+                    <input type="text" id="date" name="date" required />
+                </label>
+                <br/>
+                <label for="time">Time
+                    <input type="text" id="time" name="time" required />
+                </label>
+            </div>
+            <input type="submit"></input>
+        </form>
+        <h2 id="display"></h2>
+        </div>
+    </body>
+</html>

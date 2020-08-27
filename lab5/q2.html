@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Q2</title>
+        <script type = "text/javascript" src="q2.js"> </script>
+    </head>
+    <body onload="grader()">
+        <div class="container" id="container">
+            
+                <p>Enter yoour score:</p>
+                <input type="number" id="marks" min=0 max=100 />
+                <button onclick="grader(document.getElementById('marks').value)">Check</button>
+                <div id = "grade"></div>
+            
+            
+        </div>
+        <br/>
+        <p>All grades</p>
+        <button onclick="allmarkgrader()">Check</button>
+        <div id="allmarks"></div>
+    </body>
+</html>

@@ -1,0 +1,22 @@
+<?xml version = "1.0" encoding="UTF-8"?>
+<!DOCTYPE note SYSTEM "DatabaseDTD.dtd">
+<Profiles>
+	<Profile id="A1">
+		<Name>Vijay Nirmal</Name>	
+		<Email>abc@outlook.com</Email>
+		<Password>abc@outlook.com</Password>
+	</Profile>
+	<Profile id="A2">
+		<Name>Kogul Karna</Name>
+		<Email>qwe@outlook.com</Email>
+		<Password>abc@outlook.com</Password>
+	</Profile>
+	<Profile id="A3">
+		<Name>Mukund WN</Name>
+		<Email>zxc@outlook.com</Email>
+		<Password>abc@outlook.com</Password>
+	</Profile>
+</Profiles>
+
+
+

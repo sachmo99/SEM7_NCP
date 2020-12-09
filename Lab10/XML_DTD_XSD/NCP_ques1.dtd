@@ -1,0 +1,12 @@
+<!ELEMENT student (Name,id,study)>
+<!ELEMENT Name (#PCDATA)>
+<!ELEMENT id (#PCDATA)>
+<!ELEMENT study (courses)>
+<!ELEMENT courses (course*)>
+<!ATTLIST courses year CDATA "4">
+<!ELEMENT course (name, shortform,report?)>
+<!ELEMENT name (#PCDATA)>
+<!ELEMENT shortform (#PCDATA)>
+<!ELEMENT report (grade?,date?)>
+<!ELEMENT grade (#PCDATA)>
+<!ELEMENT date (#PCDATA)>

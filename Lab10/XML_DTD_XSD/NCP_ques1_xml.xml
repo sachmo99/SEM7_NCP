@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE student [
+<!ELEMENT student (Name,id,study)>
+<!ELEMENT Name (#PCDATA)>
+<!ELEMENT id (#PCDATA)>
+<!ELEMENT study (courses)>
+<!ELEMENT courses (course*)>
+<!ATTLIST courses year CDATA "4">
+<!ELEMENT course (name, shortform,report?)>
+<!ELEMENT name (#PCDATA)>
+<!ELEMENT shortform (#PCDATA)>
+<!ELEMENT report (grade?,date?)>
+<!ELEMENT grade (#PCDATA)>
+<!ELEMENT date (#PCDATA)>
+]>
+
+<!-- External linkage of DTD
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE student SYSTEM "NCP_ques1.dtd">
+-->
+
+<student>
+<Name> Abinaya </Name>
+<id>30082084</id>
+<study>
+<courses year="4">
+<course>
+<name> Computer Networks </name>
+<shortform>CN</shortform>
+<report>
+<grade>A+</grade>
+<date>2020-07-01</date>
+</report>
+</course>
+<course>
+<name>Theory of Computatiom</name>
+<shortform>TOC</shortform>
+</course>
+</courses>
+</study>
+</student>

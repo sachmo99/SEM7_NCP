@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="dummy_xsl.xsl" type="text/xsl"?>
+<bank>
+    <accounts>
+    <savings_accounts>
+    <savings_account id="a1" interest="0.03">
+    <balance>2500</balance>
+    </savings_account>
+    <savings_account id="a2" interest="0.03">
+    <balance>15075</balance>
+    </savings_account>
+    </savings_accounts>
+    </accounts>
+</bank>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<!DOCTYPE Purchase [
+<!ELEMENT Purchase (Date,BillingShipping,Items)>
+<!ELEMENT Date (#PCDATA)>
+<!ELEMENT BillingShipping (CustomerName,Address,PlaceOfShipping,Billing)>
+<!ELEMENT CustomerName (#PCDATA)>
+<!ELEMENT Address (#PCDATA)>
+<!ELEMENT PlaceOfShipping (#PCDATA)>
+<!ELEMENT Billing (#PCDATA)>
+<!ELEMENT Items (Item+)>
+<!ELEMENT Item (ProductId,ProductName,Quantity,Price)>
+<!ELEMENT ProductId (#PCDATA)>
+<!ELEMENT ProductName (#PCDATA)>
+<!ELEMENT Quantity (#PCDATA)>
+<!ELEMENT Price (#PCDATA)>
+]>
+
+<!-- External linkage of DTD
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE student SYSTEM "NCP_ques1.dtd">
+-->
+
+
+<Purchase>
+    <Date>26/10/2020</Date>
+    <BillingShipping>
+        <CustomerName>
+            Sachmo
+        </CustomerName>
+        <Address>Gannavaram</Address>
+        <PlaceOfShipping>BZA</PlaceOfShipping>
+        <Billing>92138</Billing>
+    </BillingShipping>
+    <Items>
+        <Item>
+            <ProductId>123</ProductId>
+            <ProductName>alskda</ProductName>
+            <Quantity>10</Quantity>
+            <Price>500</Price>
+        </Item>
+        <Item>
+            <ProductId>1234</ProductId>
+            <ProductName>alskdamcsldkf</ProductName>
+            <Quantity>35</Quantity>
+            <Price>500</Price>
+        </Item>
+        <Item>
+            <ProductId>123875</ProductId>
+            <ProductName>als54kda</ProductName>
+            <Quantity>30</Quantity>
+            <Price>500</Price>
+        </Item>
+    </Items>
+</Purchase>

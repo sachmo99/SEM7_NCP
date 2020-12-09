@@ -1,0 +1,9 @@
+<!ELEMENT email (from,to,content)>
+<!ELEMENT from (#PCDATA)>
+<!ELEMENT to (#PCDATA)>
+<!ELEMENT content (#PCDATA|exercises|person)*>
+<!ELEMENT exercises (exercise*)>
+<!ELEMENT exercise (topic, description)>
+<!ELEMENT topic (#PCDATA)>
+<!ELEMENT description (#PCDATA)>
+<!ELEMENT person (#PCDATA)>

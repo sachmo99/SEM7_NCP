@@ -1,0 +1,8 @@
+<?xml version = "1.0" encoding="UTF-8"?>
+<!ELEMENT Profiles (Profile+)>
+<!ELEMENT Profile (Name,Email,Password)+>
+<!ATTLIST Profile id ID #REQUIRED>
+<!ELEMENT Name (#PCDATA)>
+<!ELEMENT Email (#PCDATA)>
+<!ELEMENT Password (#PCDATA)>
+
